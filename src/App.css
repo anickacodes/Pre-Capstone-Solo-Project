@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content:space-around;
+  list-style-type:georgian;
+}
+
+h2 {
+  color: rgba(255, 174, 0, 0.794);
+  text-shadow: rgb(214, 31, 31) 4px 4px 10px;
+  font-family: fantasy;
+}
+
+p {
+  color: teal;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.items {
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 11px;
+}
+
+
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
